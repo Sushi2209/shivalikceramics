@@ -11,8 +11,8 @@ import uuid
 from datetime import datetime, timezone
 from contextlib import asynccontextmanager
 from jose import JWTError
-from .auth import create_token, verify_token
-from .whatsapp_service import send_whatsapp_alert
+from auth import create_token, verify_token
+from whatsapp_service import send_whatsapp_alert
 
 
 def admin_guard(authorization: str = Header(...)):
