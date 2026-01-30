@@ -20,8 +20,4 @@ def create_token():
     return jwt.encode(payload, SECRET, algorithm=ALGO)
 
 def verify_token(token: str):
-<<<<<<< HEAD
     return jwt.decode(token, SECRET, algorithms=[ALGO])
-=======
-    return jwt.decode(token, SECRET, algorithms=[ALGO])
->>>>>>> 86d9377 (Fix merge conflict in auth.py)
